@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { View, StyleSheet, TextInput } from "react-native";
+import Titulo from "./src/components/Titulo/Index.js"
+import Conteudo from "./src/components/Conteudo/Index.js"
+import Rodape from "./src/components/Rodape/Index.js"
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+export default function App(){
+  return(
+    <View style={styles.input}>
+      <Titulo/>
+      <Conteudo/>
+      <Rodape/>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  container: {
+  input: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#eeefff',
   },
 });
